@@ -167,6 +167,8 @@ public class Backgroundgps extends CordovaPlugin{
                 			last_location.put("latitude", location.getLatitude());
             				last_location.put("longitude", location.getLongitude());
             				last_location.put("accuracy", location.getAccuracy());
+            				last_location.put("provider", location.getProvider());
+            				last_location.put("timestamp", location.getTime());
 
             				result.put("last_location", last_location);
             			}
